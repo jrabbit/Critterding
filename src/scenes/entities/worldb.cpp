@@ -92,8 +92,7 @@ WorldB::WorldB()
 // 	cerr << v.y() << endl;
 // 	m_dynamicsWorld->setGravity( btVector3(0.0f, -50.0f, 0.0f) );
 
-// 	m_dynamicsWorld->getSolverInfo().m_solverMode = SOLVER_USE_WARMSTARTING + SOLVER_SIMD;
-	m_dynamicsWorld->getSolverInfo().m_solverMode = SOLVER_SIMD + SOLVER_USE_WARMSTARTING;
+	m_dynamicsWorld->getSolverInfo().m_solverMode = SOLVER_USE_WARMSTARTING + SOLVER_SIMD;
 	
 	m_dynamicsWorld->getSolverInfo().m_numIterations = 8;
 	// raycast
